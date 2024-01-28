@@ -81,6 +81,10 @@ void insspec()
     {
         insertbeg();
     }
+    else if(pos==count+1)
+    {
+        insertend();
+    }
     else
     {
         temp=head;
