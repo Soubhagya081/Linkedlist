@@ -94,29 +94,7 @@ void insspec()
         }
         newnode->next=temp->next;
         temp->next=newnode;
-    } int pos,i=1;
-    printf("\nEnter the position you want to add the node : ");
-    scanf("%d",&pos);
-    if(pos<1||pos>count+1)
-    printf("\nInvalid position !!");
-    else if(pos==1)
-    {
-        insertbeg();
-    }
-    else
-    {
-        temp=head;
-        newnode=(struct node*)malloc(sizeof(struct node));
-        printf("\nEnter data ");
-        scanf("%d",&newnode->data);
-        while(i<pos-1)
-        {
-            temp=temp->next;
-            i++;
-        }
-        newnode->next=temp->next;
-        temp->next=newnode;
-    }
+    } 
 }
 void delatbeg()  // For delete node from begining
 {
